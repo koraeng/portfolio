@@ -39,7 +39,7 @@ body{
         .MainPage_Overview {
             display:block;
             position:absolute;
-            top:8%;
+            bottom:10%;
             left:4%;
             height:auto;
         }
@@ -56,4 +56,32 @@ body{
                 font-weight:100;
                 color:#fff;
                 line-height:1.6em;
+            }
+
+        .MainPage_Menu_List {
+            position:absolute;
+            top:5%;
+            right:5%;
+            width:90%;
+            text-align:right;
+        }
+            .MainPage_Menu_List ul li {
+                display:inline-block;
+                font-size:.95em;
+                color:#fff;
+                cursor:pointer;
+                margin-left:2em;
+                height:20%;
+                padding:0 2em 0 2em;
+                border-right:1px solid #fff;
+            }
+
+            .MainPage_Menu_List ul li:last-child {
+                margin-left:0;
+                border-right:0;
+            }
+
+            .MainPage_Menu_List ul li p {
+                font-size:.85em;
+                
             }

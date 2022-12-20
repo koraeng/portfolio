@@ -1,6 +1,34 @@
 <template>
 <div id="MainPage_Div">
   <div class="MainPage_Main">
+    <div class="MenuBtn">
+      <p v-on:click="OpenMenu"></p>
+    </div>
+
+    <div class="MainPage_Menu_List">
+      <ul>
+        <li>
+          ABOUT
+          <p>Its' about my career, ability.<br>Click here to more</p>
+        </li>
+       
+        <li>
+          WEB Project
+          <p>Its' about my careerm ability.<br>Click here to discover</p>
+        </li>
+
+        <li>
+          Design Project
+          <p>Its' about signage, other design works.<br>Click here to discover</p>
+        </li>
+
+        <li>
+          Contact
+          <p>Wanna Contact with me?<br>Click here to contact</p>
+        </li>
+
+      </ul>
+    </div>
     <div class="MainPage_Tit">
       <h3>YERIN<br>PORTFOLIO</h3>
     </div>
@@ -23,3 +51,6 @@
 </style>
 
 
+<script>
+
+</script>
