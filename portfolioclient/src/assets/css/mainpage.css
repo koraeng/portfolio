@@ -22,6 +22,17 @@ body{
         height:100%;
     }
 
+        .MenuBtn {
+            position:absolute;
+            top:4%;
+            left:4%;
+            width:2em;
+            height:2em;
+            border-radius:50%;
+            background:#fff;
+            cursor:pointer;
+        }
+
         .MainPage_Tit {
             position:absolute;
             bottom:5%;
@@ -35,12 +46,15 @@ body{
                 font-size:5em;
                 color:#fff;
                 margin-bottom:0;
+                font-family:'Grand Hotel', cursive;
+                letter-spacing:4px;
             }
+
 
         .MainPage_Overview {
             display:block;
             position:absolute;
-            bottom:10%;
+            top:25%;
             left:4%;
             height:auto;
             text-align:left;
@@ -52,6 +66,7 @@ body{
                 color:#fff;
                 letter-spacing:2px;
                 margin-top:0;
+                margin-bottom:.5em;
                 font-family: 'Grand Hotel', cursive;
             }
 
@@ -69,6 +84,7 @@ body{
             width:90%;
             text-align:right;
         }
+        
             .MainPage_Menu_List ul li {
                 display:inline-block;
                 font-size:1.1em;
@@ -80,10 +96,6 @@ body{
                 border-right:1px solid #fff;
                 font-family: 'Grand Hotel', cursive;
                 letter-spacing:1px;
-            }
-
-            .MainPage_Menu_List ul li:hover {
-                color:#ffffbd
             }
 
             .MainPage_Menu_List ul li:last-child {

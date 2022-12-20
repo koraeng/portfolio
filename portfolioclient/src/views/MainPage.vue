@@ -1,11 +1,9 @@
 <template>
   <div id="MainPage_Div">
     <div class="MainPage_Main">
-      <div class="MenuBtn">
-        <p v-on:click="OpenMenu"></p>
-      </div>
+      <div class="MenuBtn" @click="OpenList"></div>
 
-      <div class="MainPage_Menu_List">
+      <div class="MainPage_Menu_List" v-show="showList">
         <ul>
           <li @click="openAbout">
             About
@@ -29,7 +27,7 @@
       </div>
 
       <div class="MainPage_Tit">
-        <h3>YERIN<br />PORTFOLIO</h3>
+        <h3>YeRin Portfolio</h3>
       </div>
 
       <div class="MainPage_Overview">
@@ -50,4 +48,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
 </style>
 
-<script></script>
+<script>
+export default {
+  name: "App",
+
+  data() {
+    return {
+      showList: false,
+    };
+  },
+  methods: {
+    OpenList: function () {
+      this.showList = !this.showList;
+    },
+  },
+};
+</script>
