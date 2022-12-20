@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body{
+    font-family:'Noto Sans KR', sans-serif, "Grand Hotel", cursive ;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+#AboutPage_Div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#333;
+}
+
+    .AboutPage_Main {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+
+        .About_Tit {
+            display:block;
+            position:absolute;
+            top:10%;
+            left:5%;
+            width:45%;
+            height:2em;
+            text-align:left;
+        }
+
+        .About_Tit p {
+            border-right: solid 3px #fff;
+            white-space: nowrap;
+            overflow: hidden;    
+            font-family:'Grand Hotel', cursive;
+            font-size: 2.5em;
+            color:#fff;
+          }
+          
+          /* Animation */
+          p {
+            animation: animated-text 3s steps(23,end) 1s 1 normal both,
+                       animated-cursor 600ms steps(23,end) infinite;
+          }
+          
+          /* text animation */
+          
+          @keyframes animated-text{
+            from{width: 0;}
+            to{width: 55%;}
+          }
+          
+          /* cursor animations */
+          
+          @keyframes animated-cursor{
+            from{border-right-color:=#fff;}
+            to{border-right-color: transparent;}
+          }

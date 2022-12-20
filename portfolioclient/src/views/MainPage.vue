@@ -40,14 +40,14 @@
           수 있습니다.
         </p>
       </div>
-
-      <div class="About_Div" v-show="showAbout"></div>
     </div>
   </div>
 </template>
 
 <style>
 @import "../assets/css/mainpage.css";
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Noto+Sans+KR:wght@100;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
 </style>
 
 <script></script>
