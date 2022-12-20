@@ -2,6 +2,7 @@
 
 body{
 	font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight:100,300,500,700
 }
 
 #MainPage_Div {
@@ -42,6 +43,7 @@ body{
             bottom:10%;
             left:4%;
             height:auto;
+            text-align:left;
         }
 
             .MainPage_Overview h4 {
@@ -82,6 +84,6 @@ body{
             }
 
             .MainPage_Menu_List ul li p {
-                font-size:.85em;
-                
+                font-size:.75em;
+                font-weight:100;
             }
