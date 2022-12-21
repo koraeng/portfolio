@@ -26,31 +26,14 @@ nav a.router-link-exact-active {
 }
 </style>
 
-<!--<script>
-    import axios from 'axios';
-
-    export default {
-        data() {
-            return {
-                users: []
-            }
-        },
-        created() {
-
-            axios.get('/api/weatherforecast', {
-                headers: {
-                    'Access-Control-Allow-Origin': '*',
-                    'Content-Type': 'application/json; charset = utf-8'
-                }
-            })
-                .then(response => {
-                    console.log(response.data);
-                })
-                .catch(e => {
-                    console.log('error : ', e)
-                })
-
-
-        }
-    }
-</script>-->
+<script>
+export default {
+  name: "app",
+  methods: {
+    sum(a, b) {
+      const result = a + b;
+      return result;
+    },
+  },
+};
+</script>
