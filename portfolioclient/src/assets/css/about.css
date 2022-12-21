@@ -1,35 +1,11 @@
 @charset "UTF-8";
 
-body{
-    font-family:'Noto Sans KR', sans-serif, "Grand Hotel", cursive ;
-    list-style:none;
-    box-sizing:border-box;
-}
-
-#AboutPage_Div {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#333;
-}
-
-    .AboutPage_Main {
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-    }
-
-        .About_Tit {
-            display:block;
-            position:absolute;
-            top:10%;
-            left:5%;
-            width:45%;
-            height:2em;
-            text-align:left;
-        }
-
+.view-enter-active, .view-leave-active {
+    transition: opacity 0.5s;
+  }
+  .view-leave-active {
+    position: absolute;
+  }
+  .view-enter, .view-leave-to {
+    opacity: 0;
+  }
