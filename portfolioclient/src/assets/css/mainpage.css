@@ -87,15 +87,19 @@ body{
         
             .MainPage_Menu_List ul li {
                 display:inline-block;
-                font-size:1.1em;
-                color:#fff;
                 cursor:pointer;
                 margin-left:2em;
                 height:20%;
                 padding:0 2em 0 2em;
                 border-right:1px solid #fff;
-                font-family: 'Grand Hotel', cursive;
-                letter-spacing:1px;
+                color:#fff;
+            }
+
+            .MainPage_Menu_List ul li a {
+                font-size:.95em;
+                color:#fff;
+                font-family: 'Noto Sans KR', sans-serif;
+                text-decoration:0;
             }
 
             .MainPage_Menu_List ul li:last-child {
@@ -103,10 +107,7 @@ body{
                 border-right:0;
             }
 
-            .MainPage_Menu_List ul li p {
-                font-size:.65em;
-                font-weight:100;
-                font-family:'Noto sans KR',sans-serif;
-                letter-spacing:1px;
-            }
 
+            .MainPage_Menu_List .ListDisc {
+                font-size:.85em;
+            }

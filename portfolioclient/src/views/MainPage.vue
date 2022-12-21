@@ -1,27 +1,30 @@
 <template>
   <div id="MainPage_Div">
     <div class="MainPage_Main">
-      <div class="MenuBtn" @click="OpenList"></div>
-
-      <div class="MainPage_Menu_List" v-show="showList">
+      <div class="MainPage_Menu_List">
         <ul>
           <li @click="openAbout">
-            About
-            <p>Its' about my career, ability.<br />Click here to more</p>
-          </li>
-          <li>
-            WEB Project
-            <p>Its' about my careerm ability.<br />Click here to discover</p>
+            <router-link to="/about">About</router-link>
+            <p class="ListDisc">Its' about my career, ability.<br />Click here to more</p>
           </li>
 
-          <li>
-            Design Project
-            <p>Its' about signage, other design works.<br />Click here to discover</p>
+          <li @click="openWeb">
+            <router-link to="">WEB Project</router-link>
+            <p class="ListDisc">
+              Its' about my careerm ability.<br />Click here to discover
+            </p>
           </li>
 
-          <li>
-            Contact
-            <p>Wanna Contact with me?<br />Click here to contact</p>
+          <li @click="openDesign">
+            <router-link to="">Design Project</router-link>
+            <p class="ListDisc">
+              Its' about signage, other design works.<br />Click here to discover
+            </p>
+          </li>
+
+          <li @click="openContact">
+            <router-link to="">Contact</router-link>
+            <p class="ListDisc">Wanna Contact with me?<br />Click here to contact</p>
           </li>
         </ul>
       </div>
